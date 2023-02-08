@@ -1,7 +1,18 @@
-// import './App.css'
+import './App.css'
+import data from './data'
+import Header from './Header'
+import TattooItem from './TattooItem'
 
 function App() {
-  return <div className="App"></div>
+  const tattooElements = data.map((tattoo, index) => {
+    return <TattooItem key={index} img={tattoo.img} name={tattoo.name} />
+  })
+  return (
+    <div className="App">
+      <Header />
+      <div className="app-grid">{tattooElements}</div>
+    </div>
+  )
 }
 
 export default App

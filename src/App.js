@@ -1,7 +1,7 @@
 import './App.css'
 import data from './data'
-import Header from './Header'
-import TattooItem from './TattooItem'
+import Header from './components/Header'
+import TattooItem from './components/TattooItem'
 
 function App() {
   const tattooElements = data.map((tattoo, index) => {

@@ -18,3 +18,19 @@
   left: 0;
   right: 0;
 }
+
+.tattoo-post-content {
+  position: relative;
+  max-width: 550px;
+  background-color: black;
+}
+
+.tattoo-post-content img {
+  display: block;
+  max-width: 100%;
+}
+
+.tattoo-post-content h4 {
+  color: white;
+  text-align: center;
+}

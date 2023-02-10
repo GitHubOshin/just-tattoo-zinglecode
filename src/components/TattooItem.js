@@ -1,9 +1,15 @@
+import './TattooItem.css'
+
 function TattooItem(props) {
-  const { img, name } = props
+  const { tattoo, onShowTattoo } = props
   return (
     <div className="tattoo-item">
-      <img alt={name} src={img} />
-      <h4>{name}</h4>
+      <img
+        alt={tattoo.name}
+        src={tattoo.img}
+        onClick={() => onShowTattoo(tattoo)}
+      />
+      <h4>{tattoo.name}</h4>
     </div>
   )
 }

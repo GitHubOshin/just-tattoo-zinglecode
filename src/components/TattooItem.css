@@ -1,0 +1,14 @@
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tattoo-item img {
+  display: block;
+  width: 100%;
+}
